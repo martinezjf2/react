@@ -13,9 +13,10 @@
     degree = Faker::Educator.degree
     phone_number = Faker::PhoneNumber.cell_phone
     email = Faker::Internet.email(domain: "#{university}")
-    avatar = Faker::Avatar.image
+    # avatar = Faker::Avatar.image
+    # customize the avatar because the avatars are showing 500 error messages
     university_id = rand(1..10)
-    Teacher.create(name: name, university_id: university_id, degree: degree, phone_number: phone_number, email: email, avatar: avatar)
+    Teacher.create(name: name, university_id: university_id, degree: degree, phone_number: phone_number, email: email)
 end
 
 

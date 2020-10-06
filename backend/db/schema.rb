@@ -18,7 +18,6 @@ ActiveRecord::Schema.define(version: 2020_10_06_215927) do
     t.integer "university_id"
     t.string "phone_number"
     t.string "email"
-    t.string "avatar"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

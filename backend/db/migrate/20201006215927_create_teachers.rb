@@ -6,7 +6,7 @@ class CreateTeachers < ActiveRecord::Migration[6.0]
       t.integer :university_id
       t.string :phone_number
       t.string :email
-      t.string :avatar
+      # t.string :avatar
 
       t.timestamps
     end

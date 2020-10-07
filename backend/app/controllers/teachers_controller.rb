@@ -3,9 +3,9 @@ class TeachersController < ApplicationController
 
   # GET /teachers
   def index
-    @teachers = Teacher.all
-
+    @teachers = @university.teachers
     render json: @teachers
+    # associate only teachers for that specific university
   end
 
   # GET /teachers/1
@@ -43,6 +43,9 @@ class TeachersController < ApplicationController
     def set_teacher
       @teacher = Teacher.find(params[:id])
     end
+
+    def set_university
+      @university = University.find(params[university_id])
 
     # Only allow a trusted parameter "white list" through.
     def teacher_params

@@ -5,7 +5,7 @@ class UniversitiesController < ApplicationController
   def index
     @universities = University.all
 
-    render json: @universities
+    render json: @universities, include: [:teachers]
   end
 
   # GET /universities/1

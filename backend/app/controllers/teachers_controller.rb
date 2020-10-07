@@ -1,5 +1,5 @@
 class TeachersController < ApplicationController
-  before_action :set_teacher, only: [:show, :update, :destroy]
+  before_action :set_university, only: [:index, :show, :update, :destroy]
 
   # GET /teachers
   def index
@@ -10,12 +10,14 @@ class TeachersController < ApplicationController
 
   # GET /teachers/1
   def show
+    @teacher = Teacher.find(params[:id])
+    # just find the specific teacher
     render json: @teacher
   end
 
   # POST /teachers
   def create
-    @teacher = Teacher.new(teacher_params)
+    @teacher = @university.teachers.new(teacher_params)
 
     if @teacher.save
       render json: @teacher, status: :created, location: @teacher
@@ -41,14 +43,15 @@ class TeachersController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_teacher
-      @teacher = Teacher.find(params[:id])
+      @teacher = Teacher.find_by(id: params[:id])
     end
 
     def set_university
-      @university = University.find(params[university_id])
+      @university = University.find(params[:university_id])
+    end
 
     # Only allow a trusted parameter "white list" through.
     def teacher_params
-      params.require(:teacher).permit(:name, :degree, :university_id, :phone_number, :email, :avatar)
+      params.require(:teacher).permit(:name, :degree, :university_id, :phone_number, :email)
     end
 end

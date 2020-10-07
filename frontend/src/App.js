@@ -4,15 +4,8 @@ import './App.css';
 
 export default class App extends React.Component {
 
-  componentDidMount() {
-    fetch('http://localhost:3000/universities')
-      .then(resp => resp.json())
-      .then(university => console.log(university)
-
-      )
-
-  }
-
+  
+  
   render() {
   return (
     <div className="App">

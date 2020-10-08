@@ -2,23 +2,15 @@ import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import {connect} from 'react-redux';
-import {fetchUniversities} from './actions/fetchUniversities'
-
+import UniversityContainer from './containers/UniversityContainer';
 
 class App extends React.Component {
-
-  componentDidMount() {
-
-    // fetch('http://localhost:3000/universities')
-    //     .then(resp => resp.json()
-    //     .then(university => console.log(university)))
-  }
-  
   
   render() {
   return (
     <div className="App">
-      App
+      
+      <UniversityContainer />
       
     </div>
     );
@@ -27,6 +19,6 @@ class App extends React.Component {
 
 
 // way to accerssing our values from our store as props
-export default connect(null, {fetchUniversities})(App)
+export default connect()(App)
 
 // what does line 30 menubar, video 4, min 43:00

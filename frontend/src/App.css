@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   color: blue;
+  
 }
 
 /* .App-logo {
@@ -40,5 +41,7 @@
 
 body {
   color: blue;
-  background-color: white;
+  background-image: url('/frontend/src/public/images/blueblend.jpg');
+  background: no-repeat;
+
 }

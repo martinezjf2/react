@@ -7,14 +7,15 @@ import thunk from 'redux-thunk';
 // any component that we wrap in provider will have access to our redux store
 import { Provider } from 'react-redux';
 import universityReducer from './reducers/universityReducer';
+import { composeWithDevTools } from 'redux-devtools-extension';
 
 
 import App from './App';
 
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-
 // set up store, is saving your data globally, reducaer is an action, reducer will take in the action object and depending on how i set it up, will return a newer version of the store if it will need to update.
-let store = createStore(universityReducer, composeEnhancers(applyMiddleware(thunk)));
+let store = createStore(
+  universityReducer,
+  composeWithDevTools(applyMiddleware(thunk)));
 
 
 ReactDOM.render(

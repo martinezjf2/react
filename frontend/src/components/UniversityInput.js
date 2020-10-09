@@ -8,7 +8,7 @@ export default class UniversityInput extends Component {
     render() {
         return (
             <div>
-             <UniversityInput />
+             UniversitiesInput
             </div>
         )
     }

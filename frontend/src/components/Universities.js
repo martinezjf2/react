@@ -6,9 +6,14 @@ import React from 'react';
 
 // console.log(props)
     return (
-        <div>
-            props
-            {props.universities.map(university => <li>{university.name} - {university.state} - {university.zip}</li>)}
+        <div className="universityClick">
+            <h1>Click A University</h1>
+            {props.universities.map(university => 
+            <div className="university">
+                <li><h2>{university.name}</h2></li> 
+                <li><h3>State: {university.state}</h3></li>
+                <li>Zip: {university.zip}</li>
+                </div>)}
         </div>
     )
 }

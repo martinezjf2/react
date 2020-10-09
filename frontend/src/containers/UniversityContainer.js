@@ -8,11 +8,11 @@ import {fetchUniversities} from '../actions/fetchUniversities'
 class UniversityContainer extends Component {
 
     componentDidMount() {
-    this.props.fetchUniversities();
+    this.props.fetchUniversities()
 
 }
     render() {
-        console.log(this.props.universities)
+        // console.log(this.props.universities)
         return (
             <div>
                 <UniversityInput />

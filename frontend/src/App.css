@@ -1,9 +1,47 @@
 .App {
   text-align: center;
-  color: blue;
+  /* color: blue; */
+background-image: url('../src/images/blueblend.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+/* font-family: "Open Sans"; */
   
 }
 
+.university {
+  border: solid;
+  margin: 15px 10px;
+  padding:70px 70px;
+  width: 100px;
+  height: 250px;
+  /* display: grid; */
+  display: inline-table;
+  background-color: white;
+  box-shadow: 0px 10px 20px 0px #222222;
+  text-align: center;
+  border-radius: 30px;
+  cursor: pointer;
+  /* grid-template-columns: repeat(3, 1fr); */
+ 
+
+}
+.university:hover {
+  border-radius: 10%;
+  box-shadow: 0px 10px 20px 0px blue;   
+  transform: translate(0, -15px);
+  /* transform: scale(-.5) translateZ(0); */
+  transition: all 0.4s ease;
+  background-color: black;
+
+}
+
+.university li {
+  text-align: center;
+  color: blue;
+  list-style-type: none;
+
+}
 /* .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -40,8 +78,16 @@
 } */
 
 body {
-  color: blue;
-  background-image: url('/frontend/src/public/images/blueblend.jpg');
-  background: no-repeat;
+  /* color: blue; */
+  /* background-attachment: url('/frontend/src/public/images/blueblend.jpg'); */
+  /* background: no-repeat; */
+  margin: 0px;
+
+}
+.universityClick h1 {
+ margin-top: 50px;
+ margin-bottom: 50px;
+ /* position: fixed; */
+ color: #213e3b;
 
 }

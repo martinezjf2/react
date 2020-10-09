@@ -4,6 +4,9 @@ import './App.css';
 // import {connect} from 'react-redux';
 import UniversityContainer from './containers/UniversityContainer';
 
+// import { faHome } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 class App extends React.Component {
   
   render() {
@@ -11,6 +14,7 @@ class App extends React.Component {
     <div className="App">
       
       <UniversityContainer />
+      {/* <div><FontAwesomeIcon icon={faHome} /></div> */}
       
     </div>
     );

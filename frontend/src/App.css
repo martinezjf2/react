@@ -5,25 +5,31 @@ background-image: url('../src/images/blueblend.jpg');
 background-repeat: no-repeat;
 background-size: cover;
 background-attachment: fixed;
+/* min-height: 100%;
+  min-width: 100%; */
 /* font-family: "Open Sans"; */
   
 }
 
 .university {
   border: solid;
-  margin: 15px 10px;
-  padding:70px 70px;
-  width: 100px;
-  height: 250px;
-  /* display: grid; */
+  
+  margin: 10px 25px;
+  padding:0px;
+  width: 20%;
+  height: 50%;
   display: inline-table;
+  /* display: table-cell; */
+  
   background-color: white;
   box-shadow: 0px 10px 20px 0px #222222;
   text-align: center;
   border-radius: 30px;
   cursor: pointer;
-  /* grid-template-columns: repeat(3, 1fr); */
- 
+  /* grid-template-columns: repeat(3, 1fr); 
+  grid-auto-rows: auto;
+  https://getflywheel.com/layout/card-layout-css-grid-layout-how-to/
+  grid-gap: 1rem */
 
 }
 .university:hover {
@@ -33,13 +39,20 @@ background-attachment: fixed;
   /* transform: scale(-.5) translateZ(0); */
   transition: all 0.4s ease;
   background-color: black;
+  border: dashed black;
+  font: bold;
+}
 
+.university li:hover {
+  color: white;
 }
 
 .university li {
   text-align: center;
   color: blue;
   list-style-type: none;
+  padding: 50px 100px
+  
 
 }
 /* .App-logo {
@@ -82,12 +95,22 @@ body {
   /* background-attachment: url('/frontend/src/public/images/blueblend.jpg'); */
   /* background: no-repeat; */
   margin: 0px;
+  /* min-height: 100%;
+  min-width: 100%; */
 
 }
 .universityClick h1 {
+  font-size: 40px;
  margin-top: 50px;
  margin-bottom: 50px;
+ /* display: flex; */
+ text-align: center;
  /* position: fixed; */
- color: #213e3b;
+ /* color: #213e3b; */
+color: white;
+}
 
+.universityClick h1:hover {
+color: blue;
+transition: all 0.4s ease;
 }

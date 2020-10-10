@@ -14,10 +14,10 @@ background-attachment: fixed;
 .university {
   border: solid;
   
-  margin: 10px 25px;
+  margin: 20px 25px;
   padding:0px;
-  width: 20%;
-  height: 50%;
+  width: 150px;
+  height: 350px;
   display: inline-table;
   /* display: table-cell; */
   

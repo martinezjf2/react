@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 //set up store, compose allows comes from redux combines different middlewares into one so we can pass in one argument as thunk which is what middleware is looking for
-import {createStore, applyMiddleware, compose} from 'redux';
+import {createStore, applyMiddleware} from 'redux';
 // handles async requests, returns a function from the action creator, benfits us by 
 import thunk from 'redux-thunk';
 // any component that we wrap in provider will have access to our redux store

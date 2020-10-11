@@ -8,6 +8,7 @@ import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 import universityReducer from './reducers/universityReducer';
 import { composeWithDevTools } from 'redux-devtools-extension';
+import {BrowserRouter as Router} from 'react-router-dom';
 
 
 import App from './App';
@@ -20,8 +21,12 @@ let store = createStore(
 
 ReactDOM.render(
   // any component that we put here will have access to the store that will hav eot be passed to the provider
+
   <Provider store={store}>
+    <Router>
     <App />
+  
+  </Router>
   </Provider>
 ,
 document.getElementById('root'));

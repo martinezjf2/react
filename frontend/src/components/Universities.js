@@ -1,4 +1,5 @@
 import React from 'react';
+import University from './University';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
@@ -11,11 +12,9 @@ import React from 'react';
             <h1>School Search</h1>
             {props.universities.map(university => 
             <div className="university">
-                <li>
-                    <h2>{university.name}</h2>
-                    <h3>State: {university.state}</h3>
-                    <p>ZipCode:{university.zip}</p>
-                    </li>
+                <li key={university.id}>
+                    <University university={university} />
+                </li>
                 </div>)}
                 {/* <FontAwesomeIcon icon={faCoffee} /> */}
         </div>

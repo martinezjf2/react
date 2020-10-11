@@ -25,8 +25,22 @@ class UniversityInput extends Component {
     handleSubmit = (event) => { 
         event.preventDefault();
         this.props.addUniversity(this.state)
+        // setState is asynchronous
+        this.setState({
+            name: '',
+            state: '',
+            zip: ''
+        })
+        // this.resetForm()
+       
 
     }
+
+    // resetForm = (event) => {
+    //     event.preventDefault()
+    //     event.target.reset()
+    // }
+
     
 
     render() {

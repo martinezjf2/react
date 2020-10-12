@@ -16,7 +16,7 @@ class UniversityContainer extends Component {
         // console.log(this.props.universities)
         return (
             <div>
-                <Route path="/university/new" component={UniversityInput} />
+                <Route path="/universities/new" component={UniversityInput} />
                 <Route path="/universities/:id" render={(routerProps) => <University {...routerProps} universities={this.props.universities}/>}  />
                 <Route exact path="/universities"  render={(routerProps) => <Universities {...routerProps} universities={this.props.universities}/>} />
                 {/* // <Universities universities={this.props.universities}/> */}

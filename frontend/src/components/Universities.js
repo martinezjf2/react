@@ -1,5 +1,6 @@
 import React from 'react';
 import University from './University';
+import {Route, Link} from 'react-router-dom';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
@@ -13,7 +14,9 @@ import University from './University';
             {props.universities.map(university => 
             <div className="university">
                 <li key={university.id}>
-                    <University university={university} />
+
+            <Link to={`/universities/${university.id}`}>{university.name}</Link>
+                    {/* <University university={university} /> */}
                 </li>
                 </div>)}
                 {/* <FontAwesomeIcon icon={faCoffee} /> */}

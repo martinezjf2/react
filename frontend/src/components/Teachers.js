@@ -16,16 +16,9 @@ const handleDelete = (teacher) => {
 
         <div>
             {props.teachers && props.teachers.map(teacher => 
-            <li key={teacher.id}>{teacher.name}<br/><button onClick={() => handleDelete(teacher)}>Delete</button></li>)}
+            <li key={teacher.id}>{teacher.name}<br/><button onClick={() => handleDelete(teacher, teacher.university_id)}>Delete</button></li>)}
         </div>
-
-
     )
-
-
-
-
-
 }
 
 export default connect(null, {deleteTeacher})(Teachers);

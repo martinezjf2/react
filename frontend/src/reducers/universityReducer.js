@@ -13,7 +13,8 @@ export default function universityReducer(state = {universities: [] }, action) {
                     return university
                 }
             })
-            return {...state, universities: universities}
+                return {...state, universities: universities}
+
             case 'DELETE_TEACHER':
                 let universitiesTwo = state.universities.map(university => {
                     if (university.id === action.payload.id) {

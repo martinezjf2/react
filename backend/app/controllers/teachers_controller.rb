@@ -3,7 +3,7 @@ class TeachersController < ApplicationController
 
   # GET /teachers
   def index
-    @teachers = @university.teachers
+    @teachers = Teacher.all
     render json: @teachers
     # associate only teachers for that specific university
   end
@@ -37,14 +37,21 @@ class TeachersController < ApplicationController
 
   # DELETE /teachers/1
   def destroy
+    @teacher = Teacher.find(params["id"])
+    @university = University.find(@teacher.university_id)
     @teacher.destroy
+    # @teacher2 = Teacher.find_by(id: params[:id])
+    # @university2 = University.find(params[:university_id])
+    # @teacher2.destroy
+    render json: @university
+  
   end
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_teacher
-      @teacher = Teacher.find_by(id: params[:id])
-    end
+    # def set_teacher
+    #   @teacher = Teacher.find_by(id: params[:id])
+    # end
 
     def set_university
       @university = University.find(params[:university_id])

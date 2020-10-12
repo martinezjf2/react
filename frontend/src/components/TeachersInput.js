@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import {connect} from 'react-redux';
+import { addTeacher } from "../actions/addTeacher";
 
 class TeachersInput extends Component {
     state ={
@@ -20,7 +21,9 @@ class TeachersInput extends Component {
 
     }
 
-    handleSubmit = () => {
+    handleSubmit = (event) => {
+        event.preventDefault()
+        // addTeacher(this.state, this.props.is)
 
     }
 

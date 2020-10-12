@@ -12,7 +12,7 @@ class TeachersContainer extends React.Component {
 
         return(
             <div>
-                <TeachersInput/>
+                <TeachersInput university={this.props.university} />
                 <Teachers teachers={this.props.university && this.props.university.teachers}/>
             </div>
         )

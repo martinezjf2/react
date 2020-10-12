@@ -11,13 +11,21 @@ background-attachment: fixed;
   
 }
 
+#universityName {
+  color: blue;
+}
+
+/* #unversityName:hover {
+  color: white;
+} */
+
 .university {
   border: solid;
-  
+  /* want to have equal margins */
   margin: 20px 25px;
   padding:0px;
-  width: 150px;
-  height: 350px;
+  width: 100px;
+  height: 200px;
   display: inline-table;
   /* display: table-cell; */
   
@@ -42,10 +50,13 @@ background-attachment: fixed;
   border: dashed black;
   font: bold;
 }
+ /* .university h1:hover {
+   color: white;
+ }
 
-.university li:hover {
+.university li h1:hover {
   color: white;
-}
+} */
 
 .university li {
   text-align: center;
@@ -101,8 +112,7 @@ body {
 }
 .universityClick h1 {
   font-size: 40px;
- margin-top: 50px;
- margin-bottom: 50px;
+ margin: 0px 15px 15px 10px;
  /* display: flex; */
  text-align: center;
  /* position: fixed; */

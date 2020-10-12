@@ -12,10 +12,14 @@ import {Route, Link} from 'react-router-dom';
         <div className="universityClick">
             <h1>School Search</h1>
             {props.universities.map(university => 
+
             <div className="university">
                 <li key={university.id}>
 
-            <Link to={`/universities/${university.id}`}>{university.name}</Link>
+            <Link to={`/universities/${university.id}`}>
+                
+                {<h1 id="universityName">{university.name}</h1>}</Link>
+                
                     {/* <University university={university} /> */}
                 </li>
                 </div>)}

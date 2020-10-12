@@ -6,12 +6,14 @@ const Teachers = (props) => {
 
     // first time porps comes trhu, they may be undefined, so we have to add a check to that by adding "props.teachers"
 
-
+const handleDelete = () => {
+    
+}
     return (
 
         <div>
             {props.teachers && props.teachers.map(teacher => 
-            <li key={teacher.id}>{teacher.name}</li>)}
+            <li key={teacher.id}>{teacher.name}<br/><button onClick={handleDelete}>Delete</button></li>)}
         </div>
 
 

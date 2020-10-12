@@ -3,7 +3,7 @@ import Universities from '../components/Universities';
 import UniversityInput from '../components/UniversityInput';
 import {connect} from 'react-redux';
 import {fetchUniversities} from '../actions/fetchUniversities';
-import {Route} from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 import University from "../components/University";
 
 class UniversityContainer extends Component {
@@ -16,10 +16,12 @@ class UniversityContainer extends Component {
         // console.log(this.props.universities)
         return (
             <div>
+                <Switch>
                 <Route path="/universities/new" component={UniversityInput} />
                 <Route path="/universities/:id" render={(routerProps) => <University {...routerProps} universities={this.props.universities}/>}  />
                 <Route exact path="/universities"  render={(routerProps) => <Universities {...routerProps} universities={this.props.universities}/>} />
                 {/* // <Universities universities={this.props.universities}/> */}
+                </Switch>
             </div>
         )
     }

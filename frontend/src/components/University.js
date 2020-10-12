@@ -1,5 +1,7 @@
 import React from 'react';
-import {Redirect} from 'react-router-dom';
+// import {Redirect} from 'react-router-dom';
+import TeachersContainer from '../containers/TeachersContainer'
+
 
 const University = (props) => {
 
@@ -11,7 +13,7 @@ const University = (props) => {
     return (
         <div>
             
-            {university ? null : <Redirect to='/universities' />}
+            {/* {university ? null : <Redirect to='/universities' />} */}
 
         {university ? <h2>{university.name}</h2>: null}
         {university ? <h3>{university.state}</h3> : null}

@@ -23,6 +23,7 @@ const University = (props) => {
             {/* <h2>{props.university.name}</h2>
             <h3>State: {props.university.state}</h3>
             <p>ZipCode:{props.university.zip}</p> */}
+        <TeachersContainer/>
 
         </div>
     )

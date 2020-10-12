@@ -10,7 +10,7 @@ class TeachersContainer extends React.Component {
 
         return(
             <div>
-
+                TeachersContainer
             </div>
         )
     }

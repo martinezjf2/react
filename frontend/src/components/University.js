@@ -1,6 +1,8 @@
 import React from 'react';
 // import {Redirect} from 'react-router-dom';
 import TeachersContainer from '../containers/TeachersContainer'
+import TeachersInput from "./TeachersInput";
+
 
 
 const University = (props) => {
@@ -24,6 +26,7 @@ const University = (props) => {
             <h3>State: {props.university.state}</h3>
             <p>ZipCode:{props.university.zip}</p> */}
         <TeachersContainer/>
+        
 
         </div>
     )

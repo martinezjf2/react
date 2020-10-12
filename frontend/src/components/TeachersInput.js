@@ -7,7 +7,9 @@ render() {
 
     return (
 
-        
+        <div>
+            TeachersInput
+        </div>
     )
 }
 

@@ -14,9 +14,9 @@ export const addTeacher = (teacher, universityId) => {
             body: JSON.stringify(teacher)
         })
         .then(response => response.json())
-        .then(teacher => dispatch({
+        .then(university => dispatch({
             type: 'ADD_TEACHER',
-            payload: teacher
+            payload: university
         }))
 
 

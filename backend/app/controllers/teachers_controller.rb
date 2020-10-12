@@ -1,5 +1,5 @@
 class TeachersController < ApplicationController
-  before_action :set_university, only: [:index, :show, :update, :destroy]
+  before_action :set_university
 
   # GET /teachers
   def index
@@ -20,7 +20,7 @@ class TeachersController < ApplicationController
     @teacher = @university.teachers.new(teacher_params)
 
     if @teacher.save
-      render json: @teacher, status: :created, location: @teacher
+      render json: @university
     else
       render json: @teacher.errors, status: :unprocessable_entity
     end

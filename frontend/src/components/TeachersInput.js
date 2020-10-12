@@ -23,7 +23,14 @@ class TeachersInput extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault()
-        // addTeacher(this.state, this.props.is)
+        this.props.addTeacher(this.state, this.props.university.id)
+        this.setState({
+            name: '',
+        degree: '',
+        phone_number: '',
+        email: ''
+
+        })
 
     }
 
@@ -57,7 +64,7 @@ render() {
 
 }
 
-export default connect(null)(TeachersInput)
+export default connect(null, {addTeacher})(TeachersInput)
 
 
 

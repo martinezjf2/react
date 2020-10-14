@@ -9,8 +9,10 @@ import {Route, Link} from 'react-router-dom';
 
 // console.log(props)
     return (
-        <div className="universityClick">
-            <h1>School Search</h1>
+
+        <div>
+            <h1 className="schoolSearch">School Search</h1>
+
             {props.universities.map(university => 
 
             <div className="university">
@@ -20,11 +22,10 @@ import {Route, Link} from 'react-router-dom';
                 
                 {<h1 id="universityName">{university.name}</h1>}</Link>
                 
-                    {/* <University university={university} /> */}
                 </li>
                 </div>)}
-                {/* <FontAwesomeIcon icon={faCoffee} /> */}
-        </div>
+                </div>
+       
     )
 }
 

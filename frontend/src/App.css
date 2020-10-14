@@ -5,14 +5,26 @@ background-image: url('../src/images/blueblend.jpg');
 background-repeat: no-repeat;
 background-size: cover;
 background-attachment: fixed;
+margin: 0
 /* min-height: 100%;
   min-width: 100%; */
 /* font-family: "Open Sans"; */
   
 }
 
-#universityName {
-  color: blue;
+.schoolSearch {
+  margin-top: 0px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 0px;
+    color:white;
+}
+
+
+.schoolSearch:hover {
+  color:blue;
+  transition: all 0.4s ease;
+
 }
 
 /* #unversityName:hover {
@@ -62,10 +74,10 @@ background-attachment: fixed;
   text-align: center;
   color: blue;
   list-style-type: none;
-  padding: 50px 100px
-  
-
+  padding: 50px
 }
+
+
 /* .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -110,17 +122,19 @@ body {
   min-width: 100%; */
 
 }
-.universityClick h1 {
+.university h1 {
   font-size: 40px;
  margin: 0px 15px 15px 10px;
  /* display: flex; */
  text-align: center;
  /* position: fixed; */
  /* color: #213e3b; */
-color: white;
+color: blue;
+/* margin: 50px auto 0 auto; */
 }
 
-.universityClick h1:hover {
-color: blue;
+.university h1:hover {
+color:white;
 transition: all 0.4s ease;
+
 }

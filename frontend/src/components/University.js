@@ -1,7 +1,7 @@
 import React from 'react';
 // import {Redirect} from 'react-router-dom';
 import TeachersContainer from '../containers/TeachersContainer'
-import TeachersInput from "./TeachersInput";
+// import TeachersInput from "./TeachersInput";
 
 
 
@@ -17,7 +17,7 @@ let university = props.universities.filter(university => university.id == props.
             
             {/* {university ? null : <Redirect to='/universities' />} */}
 
-        {university ? <h2>{university.name}</h2>: null}
+        {university ? <h2 className="university-home">{university.name}</h2>: null}
         {university ? <h3>{university.state}</h3> : null}
         {university ? <p>{university.zip}</p> : null}
 

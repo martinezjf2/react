@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import { addTeacher } from "../actions/addTeacher";
 
 class TeachersInput extends Component {
-    state ={
+    state = {
         name: '',
         degree: '',
         phone_number: '',
@@ -33,7 +33,7 @@ class TeachersInput extends Component {
         })
 
     }
-
+// lifecycle method
 render() {
 
     return (
@@ -67,9 +67,3 @@ render() {
 export default connect(null, {addTeacher})(TeachersInput)
 
 
-
-    // t.string "name"
-    // t.string "degree"
-    // t.integer "university_id"
-    // t.string "phone_number"
-    // t.string "email"

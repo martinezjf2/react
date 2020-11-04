@@ -1,4 +1,4 @@
-import University from "../components/University"
+// import University from "../components/University"
 
 
 
@@ -18,9 +18,9 @@ export const addTeacher = (teacher, universityId) => {
             type: 'ADD_TEACHER',
             payload: university
         }))
-
-
     }
-
-
 }
+
+// function increment() {
+//     return {type: 'INCREMENT_COUNTER'}
+// }

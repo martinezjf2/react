@@ -1,28 +1,40 @@
 .App {
   text-align: center;
   /* color: blue; */
-background-image: url('../src/images/blueblend.jpg');
-background-repeat: no-repeat;
-background-size: cover;
-background-attachment: fixed;
-margin: 0
-/* min-height: 100%;
+  background-image: url('../src/images/blueblend.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0px
+    /* min-height: 100%;
   min-width: 100%; */
-/* font-family: "Open Sans"; */
-  
+    /* font-family: "Open Sans"; */
+
 }
 
+/* body {
+  margin-top: 25px;
+} */
+
 .schoolSearch {
-  margin-top: 0px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-bottom: 0px;
-    color:white;
+  /* margin-top: 0px; */
+  padding-top: 50px;
+  /* padding-top: 50px; */
+  padding-bottom: 100px;
+  /* margin-bottom: 0px; */
+  color: white;
+  width: 20%;
+  height: 10px;
+  text-align: center;
+  margin: 0px auto;
+  /* position: fixed; */
+
+
 }
 
 
 .schoolSearch:hover {
-  color:blue;
+  color: blue;
   transition: all 0.4s ease;
 
 }
@@ -35,12 +47,12 @@ margin: 0
   border: solid;
   /* want to have equal margins */
   margin: 20px 25px;
-  padding:0px;
+  padding: 0px;
   width: 100px;
   height: 200px;
   display: inline-table;
   /* display: table-cell; */
-  
+
   background-color: white;
   box-shadow: 0px 10px 20px 0px #222222;
   text-align: center;
@@ -52,17 +64,20 @@ margin: 0
   grid-gap: 1rem */
 
 }
+
 .university:hover {
   border-radius: 10%;
-  box-shadow: 0px 10px 20px 0px blue;   
+  box-shadow: 0px 10px 20px 0px blue;
   transform: translate(0, -15px);
   /* transform: scale(-.5) translateZ(0); */
-  transition: all 0.4s ease;
+  transition: all 0.5s ease-in-out;
   background-color: black;
   border: dashed black;
   font: bold;
+  /* transition-timing-function: ease-in-out; */
 }
- /* .university h1:hover {
+
+/* .university h1:hover {
    color: white;
  }
 
@@ -122,19 +137,61 @@ body {
   min-width: 100%; */
 
 }
+
 .university h1 {
-  font-size: 40px;
- margin: 0px 15px 15px 10px;
- /* display: flex; */
- text-align: center;
- /* position: fixed; */
- /* color: #213e3b; */
-color: blue;
-/* margin: 50px auto 0 auto; */
+  font-size: 25px;
+  margin: 0px 15px 15px 10px;
+  /* display: flex; */
+  text-align: center;
+  /* position: fixed; */
+  /* color: #213e3b; */
+  color: blue;
+  /* margin: 50px auto 0 auto; */
 }
 
 .university h1:hover {
-color:white;
-transition: all 0.4s ease;
+  color: white;
+  transition: all 0.4s ease;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.individual-teacher {
+    border: solid;
+    margin: 25px 25px;
+    padding: 20px;
+    width: 150px;
+    height: 200px;
+    display: inline-table;
+  
+    background-color: white;
+    box-shadow: 0px 10px 20px 0px #222222;
+    text-align: center;
+    border-radius: 30px;
+    cursor: pointer;
+    
+}
+
+/* .university-homepage {
+  padding-top: 25px;
+  
+} */
+
+.university-home {
+  padding-top: 4px;
+  color: white;
+  width: 20%;
+  margin: 0px auto;
+  text-align: center;
+  
+}
+
+.university-home:hover {
+  color: blue;
+  transition: all 0.4s ease;
+
 
 }

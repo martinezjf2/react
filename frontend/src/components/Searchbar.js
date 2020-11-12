@@ -12,17 +12,10 @@ class Searchbar extends React.Component{
                 name="search"
                 // value={}
                 onChange={this.props.onSearchChange}
-                /> <br/> <br/>
-               
+                /> <br/> <br/>   
             </div>
         )
-
-    }
-   
-    }
-
-        
-     
-
+    }  
+}
 
 export default Searchbar

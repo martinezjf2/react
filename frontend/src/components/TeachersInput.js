@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import {connect} from 'react-redux';
 import { addTeacher } from "../actions/addTeacher";
+import {Link} from 'react-router-dom'
 
 class TeachersInput extends Component {
     state = {
@@ -49,7 +50,9 @@ render() {
                 <input type="text" name="phone_number" value={this.state.phone_number} onChange={this.handleChange} /><br/><br/>
                 <label>Email: </label>
                 <input type="text" name="email" value={this.state.email} onChange={this.handleChange}  /><br/><br/>
-                <input type="submit" /> <br/>
+                <input type="submit" /> <br/><br/>
+            <Link to={'/universities'}><button>Click Here For Home</button></Link>
+
            </form>
            <br/>
            

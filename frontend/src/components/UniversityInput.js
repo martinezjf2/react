@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import {connect} from 'react-redux';
 import {addUniversity} from '../actions/addUniversity'
+import {Link} from 'react-router-dom'
 
 // controlled form to control the values, because of local state holding the values
 // controllerd form
@@ -54,6 +55,11 @@ class UniversityInput extends Component {
                 <label>ZipCode;</label>
                 <input type="text" placeholder="ZipCode" name="zip" value={this.state.zip} onChange={this.handleChange}/><br/><br/>
                 <input type="submit"/>
+
+                <br/><br/>
+
+        <Link to={'/universities'}><button>Click Here For Home</button></Link>
+
                 
             </form>
             </div>

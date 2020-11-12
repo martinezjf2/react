@@ -1,19 +1,21 @@
 import React, {useState} from 'react';
-// import University from './University';
 import {Link} from 'react-router-dom';
 import Searchbar from './Searchbar'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+
 
  const Universities = (props) => {
     // functional component that will list all the universities( pass props as argument), class component would be .props, do not need a render, but need a return
-// console.log(props)
+
     return (
 
         <div>
             <h1 className="schoolSearch">School Search</h1>
 
             <Searchbar onSearchChange={props.onSearchChange}/>
+            <br/>
+<Link to={'/universities/new'}><button>New University</button></Link>
+
+<br/><br/>
 
 
             {props.universities.map(university => 

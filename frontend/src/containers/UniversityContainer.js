@@ -42,8 +42,6 @@ class UniversityContainer extends Component {
                 <Route path="/universities/:id" render={(routerProps) => <University {...routerProps} universities={this.props.universities}/>}  />
 
                 <Route exact path="/universities"  render={(routerProps) => <Universities {...routerProps} universities={filteredUniversities} onSearchChange={this.onSearchChange}/>} />
-                {/* // <Universities universities={this.props.universities}/> */}
-
                 </Switch>
 
             </div>
